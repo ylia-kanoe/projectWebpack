@@ -1,0 +1,67 @@
+.request{
+    margin-bottom: 176px;
+
+    & .title{
+        margin-bottom: 240px;
+    }
+
+    & h2{
+        margin-left: -40px;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__form{
+        width: 570px;
+        margin-right: 30px;
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 3px solid $color-three;
+        height: 20px;
+        padding-bottom: 17px;    
+        margin-bottom: 30px;
+
+        &::placeholder{
+            color: $color-hover;
+        }
+    }
+
+    &__textarea {
+        margin-top: 23px;
+        height: 135px;
+
+        &::placeholder{
+            width: 260px;
+        }
+    }
+    
+    &__button{
+        width: 350px;
+        margin-top: 40px;
+    }
+
+    &__text {
+        background-color: $color-three;
+        padding: 50px 53px;
+        width: 500px;
+        max-width: 500px;
+
+        & .text-normal {
+            line-height: 30px;
+            margin-bottom: 65px;
+
+            &:last-child{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

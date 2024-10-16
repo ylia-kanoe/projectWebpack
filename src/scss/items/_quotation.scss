@@ -1,0 +1,22 @@
+.quotation{
+    background-color: $color-three;
+    margin-bottom: 200px;
+
+    .container{
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &__text{
+        font-style: italic;    
+        margin-left: -50px; // pixel perfect
+    }
+
+    &__author {
+        font-style: italic;
+        width: 480px;
+        float: right;
+        text-align: left;
+    }
+}

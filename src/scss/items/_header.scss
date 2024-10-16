@@ -1,0 +1,34 @@
+.header{
+    display: flex;    
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.logo {
+    flex-grow: 3;
+}
+
+.menu{
+    flex-grow: 5;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        padding: 21px 23px;
+    }
+
+    &__link {
+        color: $color-two;
+        text-decoration: none;
+        padding-bottom: 4px;
+
+        &:hover{
+            border-bottom: 1px solid $color-hover;
+        }
+    }
+}

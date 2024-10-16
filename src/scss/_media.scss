@@ -1,0 +1,289 @@
+@media screen and (min-width: 1920px){
+    .conquering{
+        justify-content: flex-end;
+        
+        &__title {
+            margin: 0 105px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .about-us__info {
+        justify-content: center;
+    }
+    .get-at__list, .get-at__list-two {
+        justify-content: center;
+    }
+    .video .container{
+        text-align: center;
+    }
+    .team__info {
+        justify-content: center;
+    }
+    .gallery__images {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .container {
+        width: 900px;
+    }
+    .video img {
+        width: 100%;
+    }
+    .about-us__info p {
+        max-width: 45%;
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+    }
+    .about-us__info {
+        grid-gap: 20px;
+    }
+    .get-at__percent {
+        margin-right: 100px;
+    }
+    .conquering__title {
+        max-width: 350px;
+    }
+    .gallery__images img {
+        width: 29%;
+    }
+    .slider__text {
+        max-width: 540px;
+    }
+    .team__info {
+        grid-gap: 40px;
+        flex-wrap: wrap;
+    }
+    .services__info {
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    .title-h2{
+        font-size: $text-size-big;
+    }
+    .text-large{
+        font-size: $text-size-normal;
+        line-height: 28px;
+    }
+    .text-big{
+        font-size: $text-size-normal;
+    }
+    .text-normal{
+        font-size: $text-size-min2;
+    }
+    .title-h2:after {
+        border-right: 7px solid #00B2A0;
+        height: 35px;
+        top: 23px;
+    }
+    .conquering h2:after, .blog h2:after {
+        transform: skew(-35deg, 0deg) translateX(-15px);
+    }
+    .conquering__image {
+        height: 650px;
+    }
+    .menu__item {
+        padding: 6px 12px;
+    }
+    .services__info {
+        flex-wrap: wrap;
+    }
+    .about-us .container, .gallery .container, .services .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .get-at .container {
+        padding-top: 100px;
+        padding-bottom: 10px;
+    }
+    .get-at h2 {
+        margin-bottom: 50px;
+    }
+    .get-at .title {
+        margin-bottom: 0;
+    }
+    .conquering h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .conquering__title {
+        margin: 0 35px 0 40px;
+        max-width: 50%;
+    }   
+    .gallery__items {
+        padding-top: 0;        
+        justify-content: center;
+    }
+    .quotation, .video, .total, .blog .title, .blog, .team .title, .team, .request .title, .request, .social {
+        margin-bottom: 100px;
+    }
+    .quotation__author {
+        text-align: right;
+    }
+    .maps {
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+    .team__item img {
+        max-width: 250px;
+    }
+    .services__item .text-big {
+        padding-bottom: 30px;
+    }
+    .services__item {
+        min-height: 390px;
+    }
+    .request__text .text-normal {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 640px;
+    }
+    .title-h1 {
+       font-size: 100px;
+    }
+    .title-h2 {
+        font-size: $text-size-normal;
+    }
+    .about-us__info p {
+       max-width: 100%;
+       width: 100%;
+    }
+    .title {
+        margin-bottom: 40px;
+    }
+    .about-us .container, .gallery .container, .services .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about-us__info {
+        grid-gap: 0;
+    }
+    .get-at .container {
+        padding-top: 50px;
+    }
+    .get-at__list, .get-at__list-two {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        grid-gap: 20px;
+    
+    }
+    .get-at__item {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .get-at__list, .get-at__list-two {
+        margin-bottom: 50px;
+    }
+    .get-at__percent {
+        margin: 0 auto;
+    }
+    .conquering {
+        flex-direction: column;
+    }
+    .title.conquering__title {
+        max-width: 100%;
+    }
+    .conquering h2 {
+        margin-top: 50px;
+    }
+    .total .container {
+        grid-gap: 35px;
+    }
+    .quotation, .video, .total, .blog .title, .blog, .team .title, .team, .request .title, .request, .social, .services .title {
+        margin-bottom: 50px;
+    }
+    .services h2, .team h2, .blog h2, .gallery .title-h2, .get-at .title-h2, .about-us .title-h2 {
+        margin-left: 0;
+    }
+    .request__info {
+        flex-direction: column;
+    }
+    .request__button {
+        margin: 0 auto 50px;
+    }
+    .request__form {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 480px;
+    }
+    .text-normal {
+        font-size: $text-size-min;
+    }
+    .title-h2{
+        font-size: $text-size-min2;
+    }
+    .banner {
+        height: 240px;
+    }
+    .banner__info, .banner__img {
+        flex-grow: 0;
+    }
+    header.header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .logo {
+        transform: scale(0.7);
+    }
+    .menu__item {
+        padding: 6px 8px;
+    }
+    nav.menu {
+        margin-top: -5px;
+    }
+    .menu__list {
+        flex-wrap: wrap;
+    }
+    .banner__info--title {
+        font-size: 45px;
+        padding-top: 5px;
+    }
+
+    .banner__info--title {        
+        padding-top: 20px;
+        line-height: 1;
+    }
+    p.text-normal.banner__info--text {
+        padding: 0;
+    }
+    .banner__main-img img{
+        width: 100%;
+    }
+    .banner__img {
+        transform: scale(0.6) translateX(0px);
+        margin: 0 auto;
+    }
+    .quotation__text {
+        margin: 0;
+    }
+    .quotation__author {
+        width: 100%;
+    }
+    .total .container {
+        flex-direction: column;
+    }
+    .request__text {
+        padding: 30px;
+        width: 100%;
+    }
+}

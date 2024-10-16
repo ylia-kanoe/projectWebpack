@@ -1,0 +1,45 @@
+
+.gallery {
+
+    .container {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    & .title-h2 {
+        margin-left: -40px;
+    }
+
+    &__items{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding-top: 120px;
+        padding-bottom: 50px; 
+    }
+
+    &__item {
+        list-style: none;
+        margin-right: 25px;
+        cursor: pointer;
+
+        &:hover{
+            color: $color-hover;
+        }
+    }
+
+    &__images{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    &__more {
+        text-align: center;
+    }
+
+    &__button{
+        margin-left: -40px;
+    }
+}

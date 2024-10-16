@@ -1,0 +1,16 @@
+.maps {
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+    padding-bottom: 197px;
+
+    & img:first-child{
+        width: 100%;
+    }
+
+    & img:last-child{
+        position: absolute;
+        left: 48%;
+        top: 105px;
+    }
+}
