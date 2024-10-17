@@ -1,4 +1,3 @@
-@use '../variables';
 
 .gallery {
 
@@ -25,7 +24,7 @@
         cursor: pointer;
 
         &:hover{
-            color: variables.$color-hover;
+            color: $color-hover;
         }
     }
 

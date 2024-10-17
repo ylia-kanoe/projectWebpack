@@ -1,4 +1,3 @@
-@use '../variables';
 
 .blog{
     margin-bottom: 200px;
@@ -61,11 +60,11 @@
             cursor: pointer;
 
             &:hover{
-                background-color: variables.$color-hover;
+                background-color: $color-hover;
             }
 
             &.active{
-                background-color: variables.$color-hover;
+                background-color: $color-hover;
             }
         }
     }

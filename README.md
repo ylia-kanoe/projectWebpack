@@ -1,3 +1,5 @@
 # projectWebpack
 
 # webpack + scss
+
+# adaptation

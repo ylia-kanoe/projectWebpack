@@ -1,7 +1,5 @@
-@use '../variables';
-
 .quotation{
-    background-color: variables.$color-three;
+    background-color: $color-three;
     margin-bottom: 200px;
 
     .container{

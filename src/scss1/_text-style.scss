@@ -1,8 +1,7 @@
-@use 'variables';
 
 .title-h1{
-    font-family: variables.$font-family-more;
-    font-size: variables.$text-size-h1;
+    font-family: $font-family-more;
+    font-size: $text-size-h1;
     font-weight: 700;
     line-height: 234px;
     letter-spacing: 0.6px;
@@ -10,8 +9,8 @@
 }
 
 .title-h2{
-    font-family: variables.$font-family-more;
-    font-size: variables.$text-size-large;
+    font-family: $font-family-more;
+    font-size: $text-size-large;
     font-weight: 600;
     line-height: 56px;
     letter-spacing: 0.6px;
@@ -20,8 +19,8 @@
 }
 
 .main-text-300{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-min;
+    font-family: $font-family-main;
+    font-size: $text-size-min;
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0.6px;
@@ -29,8 +28,8 @@
 }
 
 .main-text-400{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-min;
+    font-family: $font-family-main;
+    font-size: $text-size-min;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.6px;
@@ -38,8 +37,8 @@
 }
 
 .text-min{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-min2;
+    font-family: $font-family-main;
+    font-size: $text-size-min2;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.6px;
@@ -47,8 +46,8 @@
 }
 
 .text-normal{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-normal;
+    font-family: $font-family-main;
+    font-size: $text-size-normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.6px;
@@ -56,8 +55,8 @@
 }
 
 .text-large{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-large;
+    font-family: $font-family-main;
+    font-size: $text-size-large;
     font-weight: 400;
     line-height: 56px;
     letter-spacing: 0.6px;
@@ -65,8 +64,8 @@
 }
 
 .text-very-large{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-very-large;
+    font-family: $font-family-main;
+    font-size: $text-size-very-large;
     font-weight: 700;
     line-height: 75px;
     letter-spacing: 0.6px;
@@ -74,8 +73,8 @@
 }
 
 .text-big{
-    font-family: variables.$font-family-main;
-    font-size: variables.$text-size-big;
+    font-family: $font-family-main;
+    font-size: $text-size-big;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0.6px;
@@ -90,7 +89,7 @@
     cursor: pointer;
     
     &:hover{
-        color: variables.$color-hover;
-        border-color: variables.$color-hover;
+        color: $color-hover;
+        border-color: $color-hover;
     }
 }

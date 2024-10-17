@@ -1,0 +1,42 @@
+.banner {
+    height: 1080px;
+    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+    
+    .container {
+        display: flex;
+        flex-direction: column;   
+        justify-content: space-between;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__main-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    &__info {
+        flex-grow: 7;
+    }
+
+    &__info--title{
+        text-align: center;
+        padding-top: 240px;
+        margin-bottom: 0;
+    }
+
+    &__info--text{
+        text-align: center;
+        margin: 0;
+        padding: 5px 40px 0 0px; // pixel perfect
+    }
+
+    &__img {
+        flex-grow: 2;
+        margin: auto;
+        transform: translateX(-20px); // pixel perfect
+    }
+}

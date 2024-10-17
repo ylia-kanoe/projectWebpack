@@ -1,5 +1,3 @@
-@use '../variables';
-
 .social{
     margin-bottom: 196px;
 
@@ -18,10 +16,10 @@
 
     &__link{
         text-decoration: none;
-        color: variables.$color-one;
+        color: $color-one;
 
         &:hover{
-            color: variables.$color-hover;
+            color: $color-hover;
         }
     }
 }

@@ -1,0 +1,22 @@
+.total{
+    margin-bottom: 200px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        grid-gap: 105px;
+    }
+
+    &__item {
+        text-align: center;
+
+        p:first-child {
+            color: #01353E;
+            margin-bottom: 6px;
+        }
+
+        p:last-child {
+            text-align: center;
+        }
+    } 
+} 

@@ -1,7 +1,5 @@
-@use '../variables';
-
 footer {
-    background-color: variables.$color-hover;
+    background-color: $color-hover;
     text-align: center;
     padding: 70px;
 

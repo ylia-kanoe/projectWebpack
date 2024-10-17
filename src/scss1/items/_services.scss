@@ -1,7 +1,5 @@
-@use '../variables';
-
 .services{
-    background-color: variables.$color-three;
+    background-color: $color-three;
 
     & .container{
         padding-top: 200px;
@@ -44,4 +42,5 @@
             transform: translateX(-50%);
         }
     }
+    
 }

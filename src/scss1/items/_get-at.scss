@@ -1,7 +1,5 @@
-@use '../variables';
-
 .get-at{
-    background-color: variables.$color-three;
+    background-color: $color-three;
  
     & .title-h2{
         margin-left: -43px;
