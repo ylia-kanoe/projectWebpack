@@ -61,6 +61,11 @@
     .services__info {
         grid-gap: 15px;
     }
+    .maps img:last-child {
+        width: 30px;
+        left: 49%;
+        top: 108px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -145,11 +150,16 @@
     .request__text .text-normal {
         margin-bottom: 20px;
     }
+    .maps img:last-child {
+        width: 25px;
+        left: 49%;
+        top: 62px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 640px;
+    .container{   
+        width: 90%;   
     }
     .title-h1 {
        font-size: 100px;
@@ -164,7 +174,12 @@
     .title {
         margin-bottom: 40px;
     }
-    .about-us .container, .gallery .container, .services .container {
+    .about-us .container{
+        margin-top: 50px;
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .gallery .container, .services .container {
         padding-top: 50px;
         padding-bottom: 50px;
     }
@@ -206,11 +221,12 @@
     .quotation, .video, .total, .blog .title, .blog, .team .title, .team, .request .title, .request, .social, .services .title {
         margin-bottom: 50px;
     }
-    .services h2, .team h2, .blog h2, .gallery .title-h2, .get-at .title-h2, .about-us .title-h2 {
+    .services h2, .team h2, .blog h2, .gallery .title-h2, .get-at .title-h2, .about-us .title-h2, .gallery__button, footer img, .social__list {
         margin-left: 0;
     }
     .request__info {
         flex-direction: column;
+        align-items: center;
     }
     .request__button {
         margin: 0 auto 50px;
@@ -219,12 +235,12 @@
         width: 100%;
         margin: 0;
     }
+    .maps img:last-child {
+        top: 50px;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .container {
-        width: 480px;
-    }
     .text-normal {
         font-size: $text-size-min;
     }
@@ -232,7 +248,7 @@
         font-size: $text-size-min2;
     }
     .banner {
-        height: 240px;
+        height: 270px;
     }
     .banner__info, .banner__img {
         flex-grow: 0;
@@ -268,6 +284,7 @@
     }
     .banner__main-img img{
         width: 100%;
+        height: 270px;
     }
     .banner__img {
         transform: scale(0.6) translateX(0px);
@@ -284,6 +301,118 @@
     }
     .request__text {
         padding: 30px;
-        width: 100%;
+        width: 80%;
+    }
+    footer {
+        padding: 10px;
+    }
+    .video__play {
+        border-left: 50px solid #373A39;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+    .gallery__images img {
+        width: 40%;
+    }
+    .slider, .slider__image img {
+        height: 330px;
+    }
+    .slider__toggle div {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    .slider__toggle {
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+    .maps img:last-child {
+        width: 18px;
+        left: 49%;
+        top: 32px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    
+    .title-h2 {
+        line-height: 23px;
+    }
+    .text-large {
+        font-size: $text-size-min2;
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .logo {
+        transform: scale(0.5);
+    }
+    .menu__list {
+        justify-content: center;
+    }
+    .menu__item {
+        padding: 2px 18px;
+    }
+    .banner {
+        height: 270px;
+    }
+    .banner__main-img img {
+        width: 140%;
+    }
+    .banner__img {
+        transform: scale(0.4) translateX(0px);
+    }
+    .about-us .container {
+        margin-top: 25px;
+        padding-bottom: 25px;
+    }
+    .request__text {
+        padding: 0;
+    }
+    .title-h2:after {
+        height: 25px;
+        transform: skew(-35deg, 0deg) translateX(-15px);
+        top: 7px;
+    }
+    .about-us .title-h2:after {
+         content: none;
+    }
+    .get-at .container {
+        padding-top: 25px;
+    }
+    .get-at h2, .get-at__list, .get-at__list-two {
+        margin-bottom: 25px;
+    }
+    .conquering h2{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .quotation .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .quotation__text {
+        line-height: 25px;
+        font-size: 18px;
+    }
+    .quotation, .video, .total, .blog .title, .blog, .team .title, .team, .request .title, .request, .social, .services .title {
+        margin-bottom: 25px;
+    }
+    .request__button {
+        width: 250px;
+        padding: 25px;
+        margin: 0 auto 25px;
+    }
+    .request__text .text-normal {
+        padding: 15px;
+        margin: 0;
+    }
+    .request__text .text-normal:last-child {
+        margin-bottom: 25px;
+    }
+    .maps img:last-child {
+        width: 10px;
     }
 }
