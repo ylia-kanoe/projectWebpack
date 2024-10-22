@@ -1,0 +1,259 @@
+/* Анимации */
+
+.logo:hover {
+    animation: blink 0.4s infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes blink {
+    0% {
+        filter: drop-shadow(2px 10px 6px black);
+        transform: scale(1);
+    }
+
+    100% {
+        filter: drop-shadow(6px 10px 2px black);
+        transform: scale(1.1);
+    }
+}
+
+.gallery__item,
+.button-one,
+.slider__toggle div,
+.team__item,
+.services__item,
+.menu__item,
+.social__item {
+    transition: 300ms;
+}
+
+.gallery__item:hover,
+.button-one:hover,
+.slider__toggle div:hover,
+.team__item:hover,
+.services__item:hover,
+.menu__item:hover,
+.social__item:hover {
+    transform: scale(1.15);
+    transition: 300ms;
+}
+
+@keyframes text-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        transition: all 4s ease;
+        opacity: 1;
+    }
+}
+
+@keyframes text-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        transition: all 4s ease;
+        opacity: 1;
+    }
+}
+
+@keyframes text-left {
+    0% {
+        transform: translateX(-250px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        transition: all 4s ease;
+    }
+}
+
+@keyframes text-right {
+    0% {
+        transform: translateX(250px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        transition: all 4s ease;
+    }
+}
+
+.watch-top {
+    animation: text-top 1500ms alternate;
+}
+
+.watch-bottom {
+    animation: text-bottom 1500ms alternate;
+}
+
+.watch-left {
+    animation: text-left 1500ms alternate;
+}
+
+.watch-right {
+    animation: text-right 1500ms alternate;
+}
+
+.banner {
+    position  : relative;
+}
+
+.bubble {
+    & div {
+        position : absolute;
+        height : 50px;
+        width: 50px;
+        border-radius: 50%;
+        background : #03363f;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    & .one{
+        left: 5%;
+        animation : bubble 3s infinite ease; 
+    }
+    & .two{
+        left: 10%;
+        animation : bubble 4s infinite ease; 
+    }
+    & .three{
+        left: 15%;
+        animation : bubble 7s infinite ease; 
+    }
+    & .four{
+        left: 25%;
+        animation : bubble 6s infinite ease; 
+    }
+    & .five{
+        left: 40%;
+        animation : bubble 3s infinite ease; 
+    }
+    & .six{
+        left: 50%;
+        animation : bubble 8s infinite ease; 
+    }
+    & .seven{
+        right: 35%;
+        animation : bubble 5s infinite ease; 
+    }
+    & .eight{
+        right: 20%;
+        animation : bubble 3s infinite ease; 
+    }
+    & .nine{
+        right: 10%;
+        animation : bubble 2s infinite ease; 
+    }
+    & .ten{
+        right: 5%;
+        animation : bubble 4s infinite ease; 
+    }
+} 
+
+@keyframes bubble {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        bottom: 90%;
+        transition: all 3s;
+        opacity: 0;
+    }
+}
+
+.request .container,
+.blog,
+.conquering {
+    overflow: hidden;
+}
+
+.about-us{
+    background-color: #03363f;
+    position: relative;
+    overflow: hidden; 
+}
+
+.about-us__info p, .about-us .title-h2{
+    color: #ffffff; 
+}
+
+@keyframes circle-one {
+    0% {
+        top: -100%;
+        left: -100%;
+    }
+    25% {
+        top: -80%;
+        left: -25%;
+    }
+    50% {
+        top: -70%;
+        left: 50%;
+    }
+    75% {
+        top: -50%;
+        left: 80%;
+    }
+    100% {
+        top: 0%;
+        left: 100%;
+        translate: 4s;
+    }
+}
+@keyframes circle-two {
+    0% {
+        bottom: -100%;
+        right: -100%;
+    }
+    25% {
+        bottom: -80%;
+        right: -25%;
+    }
+    50% {
+        bottom: -70%;
+        right: 50%;
+    }
+    75% {
+        bottom: -50%;
+        right: 80%;
+    }
+    100% {
+        bottom: 0%;
+        right: 100%;
+        translate: 4s;
+    }
+}
+.about-us:after, .about-us:before {
+    content: '';
+    width: 80%;
+    height: 125%;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.about-us:before {
+    top: -100%;
+    left: -100%;
+    background: radial-gradient(yellow 10%, transparent 70%);
+    animation : linear circle-one 10s infinite; 
+}
+
+.about-us:after {
+    bottom: -100%;
+    right: -100%;
+    background: radial-gradient(#95ff9a 10%, transparent 70%);
+    animation : linear circle-two 10s infinite; 
+}
